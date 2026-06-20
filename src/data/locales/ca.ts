@@ -73,7 +73,7 @@ export const ca: LocaleContent = {
     fBtn: "Enviar missatge",
     fBtnSending: "Enviant...",
     thanks: "Rebut! Et responem en menys de 24 h.",
-    email: "hola@localia.es",
+    email: "hola@local-ia.es",
     errorName: "Escriu el teu nom (mínim 2 caràcters).",
     errorEmail: "Introdueix un correu electrònic vàlid.",
     errorMessage: "Explica'ns una mica més (mínim 10 caràcters).",

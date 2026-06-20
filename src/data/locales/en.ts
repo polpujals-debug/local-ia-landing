@@ -73,7 +73,7 @@ export const en: LocaleContent = {
     fBtn: "Send message",
     fBtnSending: "Sending...",
     thanks: "Got it! We'll reply within 24 h.",
-    email: "hola@localia.es",
+    email: "hola@local-ia.es",
     errorName: "Please enter your name (2 characters minimum).",
     errorEmail: "Please enter a valid email address.",
     errorMessage: "Tell us a bit more (10 characters minimum).",

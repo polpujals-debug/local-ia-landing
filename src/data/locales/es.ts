@@ -1,0 +1,83 @@
+import type { LocaleContent } from "./types";
+
+export const es: LocaleContent = {
+  nav: { process: "Proceso", services: "Servicios", work: "Trabajo", contact: "Contacto" },
+  hero: {
+    label: "Agencia de IA · a medida",
+    title: "Automatizamos el trabajo que te frena.",
+    sub: "Somos LocalIA. Diseñamos automatizaciones, chatbots y SaaS a medida para que tu equipo deje de repetir tareas y se dedique a lo que importa.",
+    ctaPrimary: "Empieza un proyecto",
+    ctaSecondary: "Ver el proceso",
+  },
+  process: {
+    label: "Proceso",
+    title: "Cómo entregamos cada proyecto",
+    sub: "Un método claro, sin sorpresas, de la primera llamada a la puesta en marcha.",
+    steps: [
+      { title: "Descubrimos", desc: "Analizamos tus procesos y detectamos dónde pierdes tiempo y dinero." },
+      { title: "Diseñamos", desc: "Proponemos la solución, el flujo y el alcance con un presupuesto cerrado." },
+      { title: "Construimos", desc: "Desarrollamos e integramos con tus herramientas actuales, iterando contigo." },
+      { title: "Entregamos y mantenemos", desc: "Ponemos en marcha, formamos al equipo y damos soporte continuo." },
+    ],
+  },
+  services: {
+    label: "Servicios",
+    title: "Lo que hacemos",
+    sub: "Tecnología aplicada a problemas reales de tu negocio.",
+    a: { title: "Automatización de procesos", desc: "Conectamos tus herramientas y eliminamos las tareas manuales y repetitivas." },
+    b: { title: "Chatbots y agentes", desc: "Asistentes que atienden, califican y resuelven 24/7 con el tono de tu marca." },
+    c: { title: "SaaS a medida", desc: "Desarrollamos el software que tu negocio necesita y nadie más tiene." },
+  },
+  chat: {
+    label: "Automatizaciones",
+    title: "Un agente que trabaja mientras duermes",
+    sub: "Mira cómo uno de nuestros agentes atiende una consulta real, de principio a fin.",
+    agent: "Agente LocalIA",
+    online: "en línea",
+    stat1: "siempre activo",
+    stat2: "tiempo de respuesta",
+    messages: [
+      { role: "user", text: "Hola, querría reservar una cita para el lunes por la mañana." },
+      { role: "bot", text: "Claro. Tengo el lunes a las 9:30 o a las 11:00. ¿Cuál prefieres?" },
+      { role: "user", text: "A las 9:30, perfecto." },
+      { role: "bot", text: "Reservado. Te he enviado la confirmación a tu correo." },
+    ],
+  },
+  work: {
+    label: "Trabajo",
+    title: "Proyectos recientes",
+    sub: "// casos ilustrativos",
+    projects: [
+      { client: "Restaurant Aurora", tag: "Automatización", title: "Reservas y pedidos sin fricción", result: "−12 h/semana de gestión manual" },
+      { client: "Clínica Vall", tag: "Chatbot", title: "Agente de citas 24/7", result: "+38% de citas confirmadas" },
+      { client: "Móra Logística", tag: "SaaS a medida", title: "Panel de rutas en tiempo real", result: "−21% de costes de reparto" },
+    ],
+  },
+  testimonials: {
+    label: "Testimonios",
+    title: "Qué dicen los clientes",
+    items: [
+      { quote: "Entendieron nuestro problema mejor que nosotros. En tres semanas teníamos la automatización funcionando.", name: "Marta Ribó", role: "Directora de operaciones", initial: "MR" },
+      { quote: "El chatbot responde de noche y los fines de semana. Dejamos de perder clientes por no contestar a tiempo.", name: "Jordi Soler", role: "Propietario", initial: "JS" },
+      { quote: "El SaaS que nos hicieron encaja exactamente con cómo trabajamos. Nada de más, nada de menos.", name: "Aina Ferrer", role: "CEO", initial: "AF" },
+    ],
+  },
+  contact: {
+    label: "Contacto",
+    title: "Cuéntanos tu reto",
+    sub: "Respuesta en menos de 24 h. Primera llamada gratuita.",
+    or: "o escríbenos directamente a",
+    fName: "Nombre",
+    fEmail: "Correo electrónico",
+    fMsg: "Cuéntanos qué necesitas",
+    fBtn: "Enviar mensaje",
+    fBtnSending: "Enviando...",
+    thanks: "¡Recibido! Te respondemos en menos de 24 h.",
+    email: "hola@localia.es",
+    errorName: "Escribe tu nombre (mínimo 2 caracteres).",
+    errorEmail: "Introduce un correo electrónico válido.",
+    errorMessage: "Cuéntanos un poco más (mínimo 10 caracteres).",
+    errorGeneric: "No se ha podido enviar. Inténtalo de nuevo.",
+  },
+  footer: { note: "Inteligencia artificial a medida, cerca de ti." },
+};

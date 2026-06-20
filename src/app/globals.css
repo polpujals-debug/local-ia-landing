@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0b;
+  --surface: #131316;
+  --surface-2: #1b1b20;
+  --fg: #f5f5f2;
+  --muted: #8b8b86;
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #d4ff3a;
+  --accent-ink: #0a0a0b;
+  --grid: rgba(255, 255, 255, 0.035);
+  --online: #3ecf8e;
+
+  --reveal-dist: 46px;
+  --reveal-dur: 0.9s;
+  --label-spacing: 0.18em;
+  --display-weight: 600;
+  --radius: 4px;
+
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-mono: var(--font-ibm-plex-mono), monospace;
+  --font-sans: var(--font-space-grotesk), sans-serif;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-online: var(--online);
+
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-mono);
+  --font-sans: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes heroIn {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.82);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -260;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--reveal-dist));
+  transition:
+    opacity var(--reveal-dur) cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform var(--reveal-dur) cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

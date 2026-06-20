@@ -1,0 +1,83 @@
+import type { LocaleContent } from "./types";
+
+export const en: LocaleContent = {
+  nav: { process: "Process", services: "Services", work: "Work", contact: "Contact" },
+  hero: {
+    label: "AI agency · made to measure",
+    title: "We automate the work that slows you down.",
+    sub: "We are LocalIA. We design custom automations, chatbots and SaaS so your team stops repeating tasks and focuses on what matters.",
+    ctaPrimary: "Start a project",
+    ctaSecondary: "See the process",
+  },
+  process: {
+    label: "Process",
+    title: "How we deliver every project",
+    sub: "A clear method, no surprises, from the first call to go-live.",
+    steps: [
+      { title: "We discover", desc: "We analyse your processes and find where you lose time and money." },
+      { title: "We design", desc: "We propose the solution, the flow and the scope with a fixed quote." },
+      { title: "We build", desc: "We develop and integrate with your current tools, iterating with you." },
+      { title: "We deliver & maintain", desc: "We launch, train your team and provide ongoing support." },
+    ],
+  },
+  services: {
+    label: "Services",
+    title: "What we do",
+    sub: "Technology applied to real problems in your business.",
+    a: { title: "Process automation", desc: "We connect your tools and remove manual, repetitive tasks." },
+    b: { title: "Chatbots & agents", desc: "Assistants that serve, qualify and resolve 24/7 in your brand voice." },
+    c: { title: "Custom SaaS", desc: "We build the software your business needs and nobody else has." },
+  },
+  chat: {
+    label: "Automations",
+    title: "An agent that works while you sleep",
+    sub: "Watch one of our agents handle a real enquiry, from start to finish.",
+    agent: "LocalIA Agent",
+    online: "online",
+    stat1: "always on",
+    stat2: "response time",
+    messages: [
+      { role: "user", text: "Hi, I'd like to book an appointment for Monday morning." },
+      { role: "bot", text: "Of course. I have Monday at 9:30 or 11:00. Which works for you?" },
+      { role: "user", text: "9:30 is perfect." },
+      { role: "bot", text: "Booked. I've sent the confirmation to your email." },
+    ],
+  },
+  work: {
+    label: "Work",
+    title: "Recent projects",
+    sub: "// illustrative cases",
+    projects: [
+      { client: "Aurora Restaurant", tag: "Automation", title: "Frictionless bookings & orders", result: "−12 hrs/week of manual work" },
+      { client: "Vall Clinic", tag: "Chatbot", title: "24/7 appointment agent", result: "+38% confirmed appointments" },
+      { client: "Móra Logistics", tag: "Custom SaaS", title: "Real-time routing dashboard", result: "−21% delivery costs" },
+    ],
+  },
+  testimonials: {
+    label: "Testimonials",
+    title: "What clients say",
+    items: [
+      { quote: "They understood our problem better than we did. In three weeks the automation was up and running.", name: "Marta Ribó", role: "Head of operations", initial: "MR" },
+      { quote: "The chatbot answers at night and on weekends. We stopped losing clients to slow replies.", name: "Jordi Soler", role: "Owner", initial: "JS" },
+      { quote: "The SaaS they built fits exactly how we work. Nothing more, nothing less.", name: "Aina Ferrer", role: "CEO", initial: "AF" },
+    ],
+  },
+  contact: {
+    label: "Contact",
+    title: "Tell us your challenge",
+    sub: "Reply within 24 h. First call is free.",
+    or: "or write to us directly at",
+    fName: "Name",
+    fEmail: "Email",
+    fMsg: "Tell us what you need",
+    fBtn: "Send message",
+    fBtnSending: "Sending...",
+    thanks: "Got it! We'll reply within 24 h.",
+    email: "hola@localia.es",
+    errorName: "Please enter your name (2 characters minimum).",
+    errorEmail: "Please enter a valid email address.",
+    errorMessage: "Tell us a bit more (10 characters minimum).",
+    errorGeneric: "Couldn't send it. Please try again.",
+  },
+  footer: { note: "Custom artificial intelligence, close to you." },
+};

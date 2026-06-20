@@ -1,0 +1,83 @@
+import type { LocaleContent } from "./types";
+
+export const ca: LocaleContent = {
+  nav: { process: "Procés", services: "Serveis", work: "Feina", contact: "Contacte" },
+  hero: {
+    label: "Agència d'IA · feta a mida",
+    title: "Automatitzem la feina que et frena.",
+    sub: "Som LocalIA. Dissenyem automatitzacions, chatbots i SaaS a mida perquè el teu equip deixi de repetir tasques i es dediqui al que importa.",
+    ctaPrimary: "Comença un projecte",
+    ctaSecondary: "Veure el procés",
+  },
+  process: {
+    label: "Procés",
+    title: "Com entreguem cada projecte",
+    sub: "Un mètode clar, sense sorpreses, de la primera trucada a la posada en marxa.",
+    steps: [
+      { title: "Descobrim", desc: "Analitzem els teus processos i detectem on perds temps i diners." },
+      { title: "Dissenyem", desc: "Proposem la solució, el flux i l'abast amb un pressupost tancat." },
+      { title: "Construïm", desc: "Desenvolupem i integrem amb les teves eines actuals, iterant amb tu." },
+      { title: "Entreguem i mantenim", desc: "Posem en marxa, formem l'equip i donem suport continu." },
+    ],
+  },
+  services: {
+    label: "Serveis",
+    title: "El que fem",
+    sub: "Tecnologia aplicada a problemes reals del teu negoci.",
+    a: { title: "Automatitzacions de processos", desc: "Connectem les teves eines i eliminem les tasques manuals i repetitives." },
+    b: { title: "Chatbots i agents", desc: "Assistents que atenen, qualifiquen i resolen 24/7 amb el to de la teva marca." },
+    c: { title: "SaaS a mida", desc: "Desenvolupem el software que el teu negoci necessita i ningú més té." },
+  },
+  chat: {
+    label: "Automatitzacions",
+    title: "Un agent que treballa mentre tu dorms",
+    sub: "Mira com un dels nostres agents atén una consulta real, de principi a fi.",
+    agent: "Agent LocalIA",
+    online: "en línia",
+    stat1: "sempre actiu",
+    stat2: "temps de resposta",
+    messages: [
+      { role: "user", text: "Hola, voldria reservar una cita per dilluns al matí." },
+      { role: "bot", text: "Es clar. Tinc dilluns a les 9:30 o a les 11:00. Quina prefereixes?" },
+      { role: "user", text: "A les 9:30, perfecte." },
+      { role: "bot", text: "Reservat. T'he enviat la confirmació al teu correu." },
+    ],
+  },
+  work: {
+    label: "Feina",
+    title: "Projectes recents",
+    sub: "// casos il·lustratius",
+    projects: [
+      { client: "Restaurant Aurora", tag: "Automatització", title: "Reserves i comandes sense fricció", result: "−12 h/setmana de gestió manual" },
+      { client: "Clínica Vall", tag: "Chatbot", title: "Agent de cites 24/7", result: "+38% de cites confirmades" },
+      { client: "Móra Logística", tag: "SaaS a mida", title: "Panell de rutes en temps real", result: "−21% de costos de repartiment" },
+    ],
+  },
+  testimonials: {
+    label: "Testimonis",
+    title: "Què en diuen els clients",
+    items: [
+      { quote: "Van entendre el nostre problema millor que nosaltres. En tres setmanes teníem l'automatització funcionant.", name: "Marta Ribó", role: "Directora d'operacions", initial: "MR" },
+      { quote: "El chatbot respon de nit i cap de setmana. Hem deixat de perdre clients per no contestar a temps.", name: "Jordi Soler", role: "Propietari", initial: "JS" },
+      { quote: "El SaaS que ens van fer encaixa exactament amb com treballem. Res de més, res de menys.", name: "Aina Ferrer", role: "CEO", initial: "AF" },
+    ],
+  },
+  contact: {
+    label: "Contacte",
+    title: "Explica'ns el teu problema",
+    sub: "Resposta en menys de 24 h. Primera trucada gratuïta.",
+    or: "o escriu-nos directament a",
+    fName: "Nom",
+    fEmail: "Correu electrònic",
+    fMsg: "Explica'ns què necessites",
+    fBtn: "Enviar missatge",
+    fBtnSending: "Enviant...",
+    thanks: "Rebut! Et responem en menys de 24 h.",
+    email: "hola@localia.es",
+    errorName: "Escriu el teu nom (mínim 2 caràcters).",
+    errorEmail: "Introdueix un correu electrònic vàlid.",
+    errorMessage: "Explica'ns una mica més (mínim 10 caràcters).",
+    errorGeneric: "No s'ha pogut enviar. Torna-ho a provar.",
+  },
+  footer: { note: "Intel·ligència artificial feta a mida, a prop teu." },
+};
